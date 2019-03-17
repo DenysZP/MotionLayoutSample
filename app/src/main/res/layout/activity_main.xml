@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/scene01"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/basic_with_external_transitions" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/scene02"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/basic_with_internal_transitions" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/scene03"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/image_filter_view" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/scene04"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/key_frame_set_custom_attributes" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/scene05"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/path_motion_arc_transition_easing" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/scene06"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/key_trigger_key_cycle" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/lottie"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/view_pager_lottie" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/recycler"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/coordinator_layout_recycler" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fragments"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/fragments" />
+
+</LinearLayout>

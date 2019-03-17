@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        app:constraintSetEnd="@+id/end"
+        app:constraintSetStart="@+id/start"
+        app:duration="1000">
+        <OnSwipe
+            app:dragDirection="dragDown"
+            app:touchAnchorId="@+id/toastView"
+            app:touchAnchorSide="bottom" />
+
+        <KeyFrameSet>
+            <KeyTrigger
+                app:framePosition="50"
+                app:onNegativeCross="showUpToast"
+                app:target="@id/toastView"/>
+
+            <KeyTrigger
+                app:framePosition="50"
+                app:onPositiveCross="showDownToast"
+                app:target="@id/toastView"/>
+
+            <KeyCycle
+                android:translationX="50dp"
+                app:framePosition="100"
+                app:target="@id/toastView"
+                app:waveOffset="0"
+                app:wavePeriod="0"
+                app:waveShape="sin" />
+            <KeyCycle
+                android:translationX="50dp"
+                app:framePosition="50"
+                app:target="@id/toastView"
+                app:waveOffset="0"
+                app:wavePeriod="5"
+                app:waveShape="sin" />
+            <KeyCycle
+                android:translationX="50dp"
+                app:framePosition="0"
+                app:target="@id/toastView"
+                app:waveOffset="0"
+                app:wavePeriod="0"
+                app:waveShape="sin" />
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/toastView"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@id/toastView"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </ConstraintSet>
+
+</MotionScene>

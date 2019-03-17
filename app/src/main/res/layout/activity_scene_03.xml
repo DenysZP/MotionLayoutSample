@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/scene_03"
+    app:showPaths="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/image1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_favorite_border_black_24dp"
+        app:altSrc="@drawable/ic_favorite_black_24dp" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/image2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_pepe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image1" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/image3"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_pepe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image2" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/image4"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_pepe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image3" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/image5"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_pepe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image4" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MotionLayoutSample</string>
+    <string name="title_activity_lottie">LottieActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="basic_with_external_transitions">Basic with external transitions</string>
+    <string name="basic_with_internal_transitions">Basic with internal transitions</string>
+    <string name="image_filter_view">Image Filter View</string>
+    <string name="key_frame_set_custom_attributes">Key Frame Set + custom attributes</string>
+    <string name="path_motion_arc_transition_easing">Path Motion Arc + transition Easing</string>
+    <string name="key_trigger_key_cycle">Key Trigger + Key Cycle</string>
+    <string name="view_pager_lottie">view pager + lottie</string>
+    <string name="coordinator_layout_recycler">Coordinator Layout + Recycler</string>
+    <string name="fragments">Fragments</string>
+    <string name="test_title">Test title</string>
+    <string name="first_fragment">First fragment</string>
+    <string name="second_fragment">Second fragment</string>
+</resources>
